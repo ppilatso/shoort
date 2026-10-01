@@ -68,3 +68,4 @@ Temporary Files
 
 *.tmp
 *.temp
+backend/wget-log
