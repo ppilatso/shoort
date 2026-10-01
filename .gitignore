@@ -69,3 +69,4 @@ Temporary Files
 *.tmp
 *.temp
 backend/wget-log
+backend/data/shorturl.mv.db

@@ -2,6 +2,8 @@ package com.bafana.shorturl.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.bafana.shorturl.entity.Link;
 import com.bafana.shorturl.exception.LinkNotFoundException;
 import com.bafana.shorturl.repository.LinkRepository;
@@ -9,6 +11,7 @@ import com.bafana.shorturl.util.Base62;
 
 import jakarta.transaction.Transactional;
 
+@Service
 public class LinkService {
   private final LinkRepository linkRepository;
 

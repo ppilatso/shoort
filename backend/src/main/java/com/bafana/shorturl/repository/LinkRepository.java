@@ -13,6 +13,8 @@ public interface LinkRepository extends JpaRepository<Link, Long> {
 
     Optional<Link> findByShortCode(String shortCode);
 
+    boolean existsByShortCode(String shortCode);
+
     @Modifying
     @Query("UPDATE Link l SET l.clickCount = l.clickCount + 1 WHERE l.shortCode = :shortCode")
     void incrementClickCount(@Param("shortCode") String shortCode);

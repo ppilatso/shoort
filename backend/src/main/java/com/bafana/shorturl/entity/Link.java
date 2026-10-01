@@ -45,6 +45,10 @@ public class Link {
     this.clickCount = 0;
   }
 
+  public void incrementClickCount() {
+      this.clickCount++;
+  }
+
   @PrePersist
   public void prePersist() {
     if (this.createdAt == null) {
